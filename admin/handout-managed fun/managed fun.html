@@ -1,0 +1,313 @@
+<html><head><title>Managed Fun</title>
+<style>
+.footer1 {
+    border: 1px solid black;
+    margin-bottom: 10px;
+    background-color: yellow;
+}
+
+h1 {
+    color: blue;
+    text-align: center;
+    font-size: 200%;
+}
+
+h2 {
+    color: green;
+    text-align: left;
+    font-size: 150%;
+}
+
+h3 {
+    color: yellow;
+    text-align: left;
+    font-size: 125%;
+}
+
+body {
+     background: #FFFFFF;
+ }
+ 
+ 
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+    background-color: lightgrey;
+}
+
+.flex-item-left {
+    background-color: cornflowerblue;
+    width: 85%;
+    margin: 10px;
+}
+
+.flex-item-right {
+    background-color: green;
+    width: 15%;
+    margin: 10px;
+}
+
+.vericaltext{
+    width:1px;
+    font-size: 1000%;
+    word-wrap: break-word;
+    font-family: monospace;
+    text-align: center;
+}
+</style>
+
+</head><body><script>
+//var because of numerous appends
+ var flBxL;	//flex item left
+ var flBxR; //flex item right
+
+function fillContent() {
+flBxL=document.getElementById("fi_l"); 
+flBxR=document.getElementById("fi_r");
+
+title();
+List01();
+List02();
+List03();
+List04();
+List05();
+footer();
+List01Right();
+
+} //end function
+
+
+function title () {
+var H01 = document.createElement("H1");
+flBxL.appendChild(H01);
+H01.innerHTML = "Managed Fun! Good News Club &#174; Training"; 
+}
+
+
+function List01() {
+var L01h = document.createElement("H2");
+ flBxL.appendChild(L01h);
+ L01h.innerHTML = "Causes of Problems in Good News Club";
+
+var L2a_array = ["Children's needs", "Environment", "_______________"];
+var L2a=MkList("UL", L2a_array);
+flBxL.appendChild(L2a[L2a.length-1]);
+ 
+
+} //end function
+
+function List02() {
+
+var L02h = document.createElement("H2");
+flBxL.appendChild(L02h);
+L02h.innerHTML = "Problem Prevention: What Can the Teacher Do?";
+
+
+var L2a_array = ["Pray (1 Thess 5:17)"];
+var L2a=MkList("UL", L2a_array);
+flBxL.appendChild(L2a[L2a.length-1]);
+ 
+ var L2a1_array = ["For yourself", "For your team", "For the families you are teaching", "Recruit a prayer team"];
+ var L2a1=MkList("UL", L2a1_array);
+L2a[0].appendChild(L2a1[L2a1.length-1]);
+
+ 
+var L2b = document.createElement("H3");
+        var L2bt = document.createTextNode("Who will you ask to pray for you?");
+  L2b.appendChild(L2bt); document.getElementById("fi_l").appendChild(L2b);
+  
+var L2c_array = ["________________________________________", "________________________________________", "________________________________________"];
+var L2c=MkList("OL", L2c_array);
+flBxL.appendChild(L2c[L2c.length-1]); 
+
+var L2d_array = ["Plan", "Prepare", "Practice", "Participate"];
+var L2d=MkList("UL", L2d_array);
+flBxL.appendChild(L2d[L2d.length-1]);
+ 
+ var L2d1_array = ["As a team", "As an individual"];
+ var L2d1=MkList("UL", L2d1_array);
+L2d[0].appendChild(L2d1[L2d1.length-1]);
+
+var L2d1a_array = ["Schedule", "Evaluate"];
+ var L2d1a=MkList("UL", L2d1a_array);
+L2d1[0].appendChild(L2d1a[L2d1a.length-1]);
+
+var L2d2_array = ["Resources", "Outline", "Your part of club"];
+ var L2d2=MkList("UL", L2d2_array);
+L2d[1].appendChild(L2d2[L2d2.length-1]);
+
+var L2d3_array = ["What you're going to say and do", "Out loud", "Motions"];
+ var L2d3=MkList("UL", L2d3_array);
+L2d[2].appendChild(L2d3[L2d3.length-1]);
+
+var L2d4_array = ["Do anything the teacher wants the kids to do with enthusiasm"];
+ var L2d4=MkList("UL", L2d4_array);
+L2d[3].appendChild(L2d4[L2d4.length-1]);
+
+} //end function
+
+
+function List03() {
+var L03h = document.createElement("H2");
+flBxL.appendChild(L03h);
+L03h.innerHTML = "Problem Prevention: Adapting to the Environment";
+
+
+var L3a_array = ["Remember no teaching location is perfect", "Arrive __________ to set up", "__________ distractions when possible", "__________ the room God has provided"];
+var L3a=MkList("UL", L3a_array);
+flBxL.appendChild(L3a[L3a.length-1]);
+
+var L3a1_array = ["Rearrange the room if needed", "Arrange the snacks", "Rearrange the schedule as needed if you are unable to arrive early to setup", "Determine who will do what so you can setup as quickly as possible", "Ask God for wisdom"];
+var L3a1=MkList("UL", L3a1_array);
+L3a[1].appendChild(L3a1[L3a1.length-1]);
+
+var L3a2_array = ["Face children away from doors and windows", "Plan a place where kids can put their belongings", "Mark boundaries"];
+var L3a2=MkList("UL", L3a2_array);
+L3a[2].appendChild(L3a2[L3a2.length-1]);
+}
+
+function List04() {
+var L4h = document.createElement("H2");
+flBxL.appendChild(L4h);
+L4h.innerHTML = "Problem Prevention: The Children";
+
+var L4a_array = ["Undesirable behavior"];
+var L4a=MkList("UL", L4a_array);
+flBxL.appendChild(L4a[L4a.length-1]);
+
+var L4a1_array = ["Children struggle with sinful behavior", "Clearly and carefully share the Gospel and give an invitation each week", "Help saved children see how the power of the Gospel can help them obey", "Consider reasons children act out", "Make club super interesting"];
+var L4a1=MkList("UL", L4a1_array);
+L4a[0].appendChild(L4a1[L4a1.length-1]);
+
+var L4b = document.createElement("H3");
+        var L4bt = document.createTextNode("Write down some idea you could implement in your club to make it interesting and fun!");
+L4b.appendChild(L4bt); flBxL.appendChild(L4b);
+
+var L4c_array = ["Games-", "Talking", "Movement"];
+var L4c=MkList("OL", L4c_array);
+flBxL.appendChild(L4c[L4c.length-1]);
+
+}//end function
+
+function List05() {
+var L5h = document.createElement("H2");
+flBxL.appendChild(L5h);
+L5h.innerHTML = "Bad Behavior";
+
+var L5a_array = ["Be consistent", "Give Choices", "Plan Consequences", "Show Compassion", "Be a fan", "Be a family"];
+var L5a=MkList("UL", L5a_array);
+flBxL.appendChild(L5a[L5a.length-1]);
+
+var L5a0_array = ["Use and enforce club rules, such as the 5 up rules", "Show love and build relationships with every child"];
+var L5a0=MkList("UL", L5a0_array);
+L5a[0].appendChild(L5a0[L5a0.length-1]);
+
+var L5a1_array = ["Give warnings", "Pray with and for the child", "Talk to the child privately unless the whole group is affected", "Make it clear what happens next is the child's choice"];
+var L5a1=MkList("UL", L5a1_array);
+L5a[1].appendChild(L5a1[L5a1.length-1]);
+
+var L5a2_array = ["Miss out on the prize and parents will be told", "Split up children who are distracting each other", "Could use three levels of consequences", "When nothing else works follow the directions provided by your local CEF worker.", "Rewarding positive behavior",  "Dealing with challenging clubs"];
+var L5a2=MkList("UL", L5a2_array);
+L5a[2].appendChild(L5a2[L5a2.length-1]);
+
+var L5a2c_array = ["Warning", "Loses privilege to play review game", "Loses privilege to have treat after club"];
+var L5a2c=MkList("UL", L5a2c_array);
+L5a2[2].appendChild(L5a2c[L5a2c.length-1]);
+
+var L5a2e_array = ["Prize box or bag", "Verbal praise", "High fives", "Team points", "Thumbs up Points Game"];
+var L5a2e=MkList("UL", L5a2e_array);
+L5a2[4].appendChild(L5a2e[L5a2e.length-1]);
+
+var L5a2f_array = ["Pray", "First-verbal warning", "Second-conduct slip given, parent contacted", "Three conduct slips-one week suspension", "If no change-expulsion from club"];
+var L5a2f=MkList("UL", L5a2f_array);
+L5a2[5].appendChild(L5a2f[L5a2f.length-1]);
+
+var L5a3_array = ["Be a friend"];
+var L5a3=MkList("UL", L5a3_array);
+L5a[3].appendChild(L5a3[L5a3.length-1]);
+
+var L5a3a_array = ["Use a friendly voice and smile", "Listen to them", "Memorize and use names", "Sit next to them", "Understand how to help children with disabilities"];
+var L5a3a=MkList("UL", L5a3a_array);
+L5a3[0].appendChild(L5a3a[L5a3a.length-1]);
+
+var L5a4_array = ["Cheer them on", "Give high fives", "Compliment good choices", "Be interested in accomplishments"];
+var L5a4=MkList("UL", L5a4_array);
+L5a[4].appendChild(L5a4[L5a4.length-1]);
+
+var L5a5_array = ["Reach out when club is over", "Get to know the family", "Talk with others about how to help the child succeed", "Send notes in the mail"];
+var L5a5=MkList("UL", L5a5_array);
+L5a[5].appendChild(L5a5[L5a5.length-1]);
+} //end function
+
+function MkList(Type, Arr) {
+var e=[]; //element
+var tn=[]; //text node
+var Lst = document.createElement(Type);
+     
+for (ctr=0; ctr<Arr.length; ctr++) {
+
+e.push(document.createElement("LI"));
+tn.push(document.createTextNode(Arr[ctr]));
+e[ctr].appendChild(tn[ctr]);
+Lst.appendChild(e[ctr]);
+} //end for
+e.push(Lst); //mismatched parameter at array end
+return(e);
+} //end function
+
+function footer() {
+//footer v2
+var ftr;
+ftr= document.createElement("div");
+ftr.id = "footer1";
+ftr.setAttribute('class', 'footer1');
+ftr.innerHTML='2016 Child Evangelism Fellowship, Inc. &#174; / &copy; All rights reserved. Version 1.0';
+flBxL.appendChild(ftr);
+} //end footer
+
+function List01Right() {
+
+var e1=document.createElement("P");
+var a=document.createTextNode("PRAY");
+e1.appendChild(a);
+flBxR.appendChild(e1);
+
+var e2=document.createElement("P");
+var b=document.createTextNode("PLAN");
+e2.appendChild(b);
+flBxR.appendChild(e2);
+
+var e3=document.createElement("P");
+var c=document.createTextNode("PREPARE");
+e3.appendChild(c);
+flBxR.appendChild(e3);
+
+
+var e4=document.createElement("P")
+d=document.createTextNode("PRACTICE");
+e4.appendChild(d);
+flBxR.appendChild(e4);
+
+var e5=document.createElement("P")
+e=document.createTextNode("PARTICIPATE");
+e5.appendChild(e);
+flBxR.appendChild(e5);
+
+
+var e2=document.createElement("P")
+var fun=document.createTextNode("FUN");
+e2.setAttribute("class","vericaltext");
+e2.appendChild(fun);
+flBxR.appendChild(e2);
+}
+</script>
+
+
+<div class="flex-container">
+  <div class="flex-item-left" id="fi_l"></div>
+  <div class="flex-item-right" id="fi_r"></div> 
+</div>
+
+ <script>fillContent()</script>
+
+</body></html>

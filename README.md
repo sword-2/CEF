@@ -12,7 +12,7 @@ This repo is not an official site of CEF. It is just a library of some materials
 
 ## mini books or Zine.
 
-Formatting to HTML has not been completed so only The docx and pdf files received were loaded. Each mini-book or zine had 2 pages. An assembly was not done, but a blog was found: <a href="https://anatomicair.com/how-to-make-a-one-page-zine/">How To Make a One-Page Zine (16 pages)</a>
+Formatting to HTML has not been completed so only The docx and pdf files received were loaded. Each mini-book or zine had 2 pages. A book had not been assembled, but procedures maybe on net: <a href="https://anatomicair.com/how-to-make-a-one-page-zine/">How To Make a One-Page Zine (16 pages)</a>
 
 <table border=1><caption>contents</caption>
 <tr>

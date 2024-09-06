@@ -37,8 +37,8 @@ Formatting to HTML has not been completed so only The docx and pdf files receive
 
 <tr>
 	<td>The Story of the Christmas Guest</td>
-	<td><a href="">tbd</a></td>
-	<td><a href="">tbd</a></td>
+	<td><a href="https://github.com/sword-2/CEF/blob/main/zine/ChristmasGuest/docx/ChristmasGuest2023Pg1a.docx">tbd</a></td>
+	<td><a href="https://github.com/sword-2/CEF/blob/main/zine/ChristmasGuest/docx/ChristmasGuest2023Pg2b.docx">tbd</a></td>
 	<td><a href="">tbd</a></td>
 	<td><a href="">tbd</a></td>
 	<td>Not done</td>
@@ -47,8 +47,8 @@ Formatting to HTML has not been completed so only The docx and pdf files receive
 	</tr>
 <tr>
 	<td>Resurrection Sunday</td>
-	<td><a href="">tbd</a></td>
-	<td><a href="">tbd</a></td>
+	<td><a href="https://github.com/sword-2/CEF/blob/main/zine/Easter/docx/Easter100922Pg1.docx">tbd</a></td>
+	<td><a href="https://github.com/sword-2/CEF/blob/main/zine/Easter/docx/Easter100922Pg2.docx">tbd</a></td>
 	<td><a href="">tbd</a></td>
 	<td><a href="">tbd</a></td>
 	<td>Not done</td>
@@ -65,4 +65,3 @@ Formatting to HTML has not been completed so only The docx and pdf files receive
 	<td>Not done</td>	
 	</tr>
 </table>
-

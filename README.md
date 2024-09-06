@@ -31,8 +31,8 @@ Formatting to HTML has not been completed so only The docx and pdf files receive
 	<td><a href="">tbd</a></td>
 	<td><a href="">tbd</a></td>
 	<td><a href="">tbd</a></td>
-	<td><a href="">tbd</a></td>
-	<td><a href="">tbd</a></td>	
+	<td>Not done</td>
+	<td>Not done</td>	
 	</tr>
 
 <tr>
@@ -41,8 +41,8 @@ Formatting to HTML has not been completed so only The docx and pdf files receive
 	<td><a href="">tbd</a></td>
 	<td><a href="">tbd</a></td>
 	<td><a href="">tbd</a></td>
-	<td><a href="">tbd</a></td>
-	<td><a href="">tbd</a></td>	
+	<td>Not done</td>
+	<td>Not done</td>	
 	
 	</tr>
 <tr>
@@ -51,8 +51,8 @@ Formatting to HTML has not been completed so only The docx and pdf files receive
 	<td><a href="">tbd</a></td>
 	<td><a href="">tbd</a></td>
 	<td><a href="">tbd</a></td>
-	<td><a href="">tbd</a></td>
-	<td><a href="">tbd</a></td>	
+	<td>Not done</td>
+	<td>Not done</td>	
 	</tr>
 
 <tr>
@@ -61,8 +61,8 @@ Formatting to HTML has not been completed so only The docx and pdf files receive
 	<td><a href="">tbd</a></td>
 	<td><a href="">tbd</a></td>
 	<td><a href="">tbd</a></td>
-	<td><a href="">tbd</a></td>
-	<td><a href="">tbd</a></td>	
+	<td>Not done</td>
+	<td>Not done</td>	
 	</tr>
 </table>
 

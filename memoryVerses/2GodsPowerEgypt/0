@@ -1,0 +1,104 @@
+#!/bin/sh
+#Assemble html file to printout memory verses.
+
+verse1Ref="2 Samuel 22:2b"
+verse1Translation="ESV"
+verse1Text="\"The Lord is my rock and my fortress and my deliverer.\""
+verse1Adjustments="-"
+
+verse2Ref="Isaiah 45:5a"
+verse2Translation="ESV"
+verse2Text="I am the Lord, and there is no other, besides me there is no God;"
+verse2Adjustments="-"
+
+verse3Ref="Psalm 46:1"
+verse3Translation="ESV"
+verse3Text="God is our refuge and strength, a very present help in trouble."
+verse3Adjustments="-"
+
+verse4Ref="Matthew 22:37-39"
+verse4Translation="ESV"
+verse4Text="And he said to him, You shall love the Lord your God with all your heart and with all your soul and with all your mind. This is the great and first commandment. And a second is like it: You shall love your neighbor as yourself."
+verse4Adjustments="single quote skipped"
+
+
+main() {
+	oFile='../2.html' #random name for output file
+	title='Memory Verses, 2 Gods Power - Escape from Egypt (version 2)'
+
+	case $1 in
+		"a") #assemble a html file with the memory verses
+		if [ -f "$oFile" ]; then rm "$oFile"; fi #remove any old file if present.
+		printf "<!DOCTYPE html>" >> $oFile
+		printf "\n<html><head>" >> $oFile
+		printf "\n<title>%s</title>" "$title" >> $oFile
+		printf "\n</head><body>" >> $oFile
+
+		printf "\n<table border=\"1\">" >> $oFile
+			printf "\n<caption>%s</caption>" "$title" >> $oFile
+			printf "\n<tr>" >> $oFile
+			printf "\n\t<th>Reference</th>" >> $oFile
+			printf "\n\t<th>Text</th>" >> $oFile
+			printf "\n\t</tr>" >> $oFile
+			makeRow "$verse1Ref" "$verse1Text" "$oFile"
+			makeRow "$verse2Ref" "$verse2Text" "$oFile"
+			makeRow "$verse3Ref" "$verse3Text" "$oFile"
+			makeRow "$verse4Ref" "$verse4Text" "$oFile"
+			printf "\n</table>" >> $oFile
+		printf "\n<hr>" >> $oFile
+		
+		printf "\n<table border=\"1\">" >> $oFile
+			printf "\n<caption>%s</caption>" "$title" >> $oFile
+			printf "\n<tr>" >> $oFile
+			printf "\n\t<th>Reference</th>" >> $oFile
+			printf "\n\t<th>Text</th>" >> $oFile
+			printf "\n\t</tr>" >> $oFile
+			makeRow "$verse1Ref" "$verse1Text" "$oFile"
+			makeRow "$verse2Ref" "$verse2Text" "$oFile"
+			makeRow "$verse3Ref" "$verse3Text" "$oFile"
+			makeRow "$verse4Ref" "$verse4Text" "$oFile"
+			printf "\n</table>" >> $oFile
+		printf "\n<hr>" >> $oFile
+		
+		printf "\n<table border=\"1\">" >> $oFile
+			printf "\n<caption>%s</caption>" "$title" >> $oFile
+			printf "\n<tr>" >> $oFile
+			printf "\n\t<th>Reference</th>" >> $oFile
+			printf "\n\t<th>Text</th>" >> $oFile
+			printf "\n\t</tr>" >> $oFile
+			makeRow "$verse1Ref" "$verse1Text" "$oFile"
+			makeRow "$verse2Ref" "$verse2Text" "$oFile"
+			makeRow "$verse3Ref" "$verse3Text" "$oFile"
+			makeRow "$verse4Ref" "$verse4Text" "$oFile"
+			printf "\n</table>" >> $oFile
+
+		printf "\n</body></html>" >> $oFile
+
+		;;
+		"sp") #Catch some typos, spelling errors. Uncertain best among several spell checkers, aspell, hunspell, etc. Just pick one
+			hunspell $oFile #othr spell checkers - aspell, etc.
+			;;
+
+      "uc") #check for unicode
+	  	#unicode may have lots of benefits, but some legacy software tools that only do ASCII might crash if reading a unicode.
+		#For example, ascii tools my want straight quotes and not curly quotes.
+        grep -rnoP "[^\x00-\x7F]" "$oFile" #n option for line number
+	  ;;
+		*)
+			printf 'unexpected argument %s, plz try again' "$1"
+			exit 1
+			;;
+	esac
+ 	exit 0
+ } #end details
+
+
+makeRow() {
+	printf "\n<tr>" >> $oFile
+		printf "\n\t<td>%s</td>" "$1" >> "$3"
+		printf "\n\t<td>%s</td>" "$2" >> "$3"
+		printf "\n\t</tr>" >> $oFile
+}
+
+main "$@"; exit
+

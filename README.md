@@ -1,7 +1,7 @@
 # README
 
 ## Summary
-Not an official CEF page. It is just a library of some materials collected, copied, or being generated while participating.
+Not an official CEF page. Just a library of some materials collected, copied, or generated while participating.
 
 ## Copied - handout
 <table border=1><caption>contents, for copied materials</caption>
@@ -75,11 +75,8 @@ Not tested: Net procedures from unknown source: <a href="https://anatomicair.com
 
 
 ## copied and generated - memory verse printouts
-<p>Another incomplete effort, but some printouts attempted. Small printout may assist any clubbers trying to remember a previous memory verse.</p>
 
-<p>Enhancements not yet attempted:</p>
-<ul>
-	<li>Change out hardcoded variables for verses in shell script to more automated variables. More flexible read may support preparing files in more formats like pdf. Flexible read could be either a network call to a server (Bible Gateway, Blue Letter Bible, Bible Hub, SWORD Bible Tool) or local file.</li>
-	<li>Investigate if W3C HTML/CSS recommendations can help verify printout size is optimized to one page.</li>
-	<li>Custom HTML elements (html living standard par 4.13) to load CEF verses into Document Object Model (DOM).</li>
-</ul>
+<table border=1><caption>memory verses, units 1-3</caption>
+<tr><th>Name / Link</th><th>Comments</th></tr>
+<tr><td><a href="https://html-preview.github.io/?url=https://raw.githubusercontent.com/sword-2/CEF/main/memoryVerses/units1_3.html">units1_3.html</a></td><td>-</td></tr>
+</table>

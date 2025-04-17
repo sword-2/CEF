@@ -5,7 +5,7 @@ title1='Memory Verses, 1 Gods Love - Hope for the outcast (ver 3)'
 
 verse1_1Ref="John 1:12"
 verse1_1Translation="ESV"
-verse1_1Text="But to all who did receive him, who believed in his name, he gave the right to become children on God,"
+verse1_1Text="But to all who did receive him, who believed in his name, he gave the right to become children of God,"
 #            "
 verse1_1Adjustments="-"
 

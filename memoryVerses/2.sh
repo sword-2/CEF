@@ -25,21 +25,14 @@ verse2_4Adjustments="single quote skipped"
 
 makeRow() {
 	printf "\n<tr>"
+		printf "\n\t<td>2</td>"
 		printf "\n\t<td>%s</td>" "$1"
 		printf "\n\t<td>%s</td>" "$2"
 		printf "\n\t</tr>"
 }
 
 
-printf "\n<table border=\"1\">" >> $1
-	printf "\n<caption>%s</caption>" "$title2" >> $1
-	printf "\n<tr>" >> $1
-	printf "\n\t<th>Reference</th>" >> $1
-	printf "\n\t<th>Text</th>" >> $1
-	printf "\n\t</tr>" >> $1
 	makeRow "$verse2_1Ref" "$verse2_1Text" >> $1
 	makeRow "$verse2_2Ref" "$verse2_2Text" >> $1
 	makeRow "$verse2_3Ref" "$verse2_3Text" >> $1
 	makeRow "$verse2_4Ref" "$verse2_4Text" >> $1
-	printf "\n</table>" >> $1
-

@@ -44,6 +44,7 @@ verse1_6Adjustments="-"
 
 makeRow() {
 	printf "\n<tr>"
+		printf "\n\t<td>1</td>"
 		printf "\n\t<td>%s</td>" "$1"
 		printf "\n\t<td>%s</td>" "$2"
 		printf "\n\t</tr>"
@@ -51,18 +52,10 @@ makeRow() {
 
 
 #printf '\nscript 1.sh ran, $1=%s' "$1" #debugging line
-
-printf "\n<table border=\"1\">" >> $1
-	printf "\n<caption>%s</caption>" "$title1" >> $1
-	printf "\n<tr>" >> $1
-	printf "\n\t<th>Reference</th>" >> $1
-	printf "\n\t<th>Text</th>" >> $1
-	printf "\n\t</tr>" >> $1
 	makeRow "$verse1_1Ref" "$verse1_1Text" >> $1
 	makeRow "$verse1_2Ref" "$verse1_2Text" >> $1
 	makeRow "$verse1_3Ref" "$verse1_3Text" >> $1
 	makeRow "$verse1_4Ref" "$verse1_4Text" >> $1
 	makeRow "$verse1_5Ref" "$verse1_5Text" >> $1
 	makeRow "$verse1_6Ref" "$verse1_6Text" >> $1
-	printf "\n</table>" >> $1
 
